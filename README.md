@@ -29,6 +29,7 @@ Linux version 5.2.0-2-amd64 (debian-kernel@lists.debian.org) (gcc version 8.3.0 
 ## DKMS installation
 
 ```bash
+git clone https://github.com/cilynx/rtl88x2bu
 cd rtl88x2bu
 VER=$(sed -n 's/\PACKAGE_VERSION="\(.*\)"/\1/p' dkms.conf)
 sudo rsync -rvhP ./ /usr/src/rtl88x2bu-${VER}
